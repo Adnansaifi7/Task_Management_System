@@ -7,7 +7,7 @@ const state = {
 const taskContents = document.querySelector(".task_contents");
 const taskModal = document.querySelector(".task_modal_body"); 
 
-const htmlTaskContent = ({id, title, description, type,url}) => { `
+const htmlTaskContent = ({id, title, description, type,url}) =>  `
  <div class= col-md-6, col-lg-4,  mt-3 id=${id}, key= ${id}>
  <div class = "card hadow-sm  task_card">
  <div class = "card-header d-flex gap-2 justify-content-end task_card_header">
@@ -52,7 +52,6 @@ const htmlTaskContent = ({id, title, description, type,url}) => { `
  </div>
  </div>
 `;
-};
 const htmlModalContent = ({id,title,description , url}) =>{
     const date = new Date(parseInt());
     return `
